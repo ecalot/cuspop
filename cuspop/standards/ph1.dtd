@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+
+<!ELEMENT princehack ((files|hacks|defines)*)>
+<!ELEMENT files ((file)*)>
+<!ELEMENT file (#PCDATA)>
+<!ELEMENT hacks ((folder|hack)*)>
+<!ELEMENT defines ((enum)*)>
+<!ELEMENT folder ((folder|hack)*)>
+<!ELEMENT hack ((offset|check|read|group)*)>
+<!ELEMENT group ((offset|check|read|group)*)>
+<!ELEMENT read ((option)*)>
+<!ELEMENT enum ((option)*)>
+<!ELEMENT offset (#PCDATA)>
+<!ELEMENT option (#PCDATA)>
+<!ELEMENT check (#PCDATA)>
+
+<!ATTLIST princehack version CDATA #REQUIRED>
+
+<!ATTLIST enum names CDATA #REQUIRED>
+
+<!ATTLIST file path CDATA #REQUIRED>
+<!ATTLIST file name CDATA #REQUIRED>
+<!ATTLIST file version CDATA #REQUIRED>
+<!ATTLIST file md5 CDATA #REQUIRED>
+<!ATTLIST file default (true) #IMPLIED>
+<!ATTLIST file repack (true) #IMPLIED>
+<!ATTLIST file hide (true) #IMPLIED>
+
+<!ATTLIST folder name CDATA #REQUIRED>
+<!ATTLIST folder help CDATA #IMPLIED>
+
+<!ATTLIST hack help CDATA #IMPLIED>
+<!ATTLIST hack name CDATA #REQUIRED>
+
+<!ATTLIST group name CDATA #REQUIRED>
+
+<!ATTLIST option value CDATA #IMPLIED>
+<!ATTLIST option default (true) #IMPLIED>
+
+<!ATTLIST read type CDATA #IMPLIED>
+<!ATTLIST read name CDATA #IMPLIED>
+<!ATTLIST read minval CDATA #IMPLIED>
+<!ATTLIST read maxval CDATA #IMPLIED>
+<!ATTLIST read writeoperation CDATA #IMPLIED>
+<!ATTLIST read readoperation CDATA #IMPLIED>
+<!ATTLIST read help CDATA #IMPLIED>
+<!ATTLIST read duplicated CDATA #IMPLIED>
+<!ATTLIST read default CDATA #IMPLIED>
+<!ATTLIST read size CDATA #IMPLIED>
+<!ATTLIST read use (checkbox) #IMPLIED>
+<!ATTLIST read enum CDATA #IMPLIED>
+
+<!ATTLIST offset file CDATA #REQUIRED>
+<!ATTLIST offset value CDATA #REQUIRED>
+<!ATTLIST check codes CDATA #REQUIRED>
+

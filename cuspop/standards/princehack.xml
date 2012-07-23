@@ -1,0 +1,1455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE princehack SYSTEM "http://www.princed.org/standards/xml/ph1.dtd">
+<princehack version="1.3">
+	<files>
+		<file path="prince.exe" name="p0" version="1.0 packed cracked" md5="064b9d41972630f2cf26a4732ff29d13" hide="true"/>
+		<file path="prince.exe" name="p3" version="1.3 packed" md5="11179ff0742a2dd352100ad5d8eb267b" hide="true" />
+		<file path="prince.exe" name="p4" version="1.4 packed" md5="b5f6b025722a875a32643c800d244af1" hide="true" />
+		<file path="prince.exe" name="u0" version="1.0 unpacked cracked" md5="877db132348c5587c060239c0352b1c0" default="true" repack="true" />
+		<file path="prince.exe" name="u3" version="1.3 unpacked" md5="c1ce9f0c5e4d48ef01e77fe2a1d8ae34" repack="true"/>
+		<file path="prince.exe" name="u4" version="1.4 unpacked" md5="a8bd77b135f0e4595c911eeb9c70700d" repack="true"/>
+	</files>
+	<defines>
+		<enum name='scenes'>
+			<option value="0">none</option>
+			<option value="38733240">Princess waiting</option>
+			<option value="38733188">Princess sleeping</option>
+			<option value="38732621">Princess talking to mouse</option>
+			<option value="38732727">Princess feeding mouse</option>
+			<option value="38733093">Princess waiting 2</option>
+		</enum>
+		<enum name='environment'>
+			<option value="0">Dungeon</option>
+			<option value="1">Palace</option>
+		</enum>
+		<enum name='guards'>
+			<option value="0" default="true">Default guard, using guard.dat</option>
+			<option value="1">Fat guard, using fat.dat</option>
+			<option value="2">Skeleton, using skel.dat</option>
+			<option value="3">Jaffar, using vizier.dat</option>
+			<option value="4">Shadow, using shadow.dat</option>
+			<option value="-1">No guard, don't load resources</option>
+		</enum>
+		<enum name='keyboard'>
+			<option value="-1">None (deactivate)</option>
+			<option value="65">Shift+A</option>
+			<option value="66">Shift+B</option>
+			<option value="67">Shift+C</option>
+			<option value="68">Shift+D</option>
+			<option value="69">Shift+E</option>
+			<option value="70">Shift+F</option>
+			<option value="71">Shift+G</option>
+			<option value="72">Shift+H</option>
+			<option value="73">Shift+I</option>
+			<option value="74">Shift+J</option>
+			<option value="75">Shift+K</option>
+			<option value="76">Shift+L</option>
+			<option value="77">Shift+M</option>
+			<option value="78">Shift+N</option>
+			<option value="79">Shift+O</option>
+			<option value="80">Shift+P</option>
+			<option value="81">Shift+Q</option>
+			<option value="82">Shift+R</option>
+			<option value="83">Shift+S</option>
+			<option value="84">Shift+T</option>
+			<option value="85">Shift+U</option>
+			<option value="86">Shift+V</option>
+			<option value="87">Shift+W</option>
+			<option value="88">Shift+X</option>
+			<option value="89">Shift+Y</option>
+			<option value="90">Shift+Z</option>
+			<option value="1">Control+A</option>
+			<option value="2">Control+B</option>
+			<option value="3">Control+C</option>
+			<option value="4">Control+D</option>
+			<option value="5">Control+E</option>
+			<option value="6">Control+F</option>
+			<option value="7">Control+G</option>
+			<option value="8">Backspace/Control+H</option>
+			<option value="9">Tab/Control+I</option>
+			<option value="10">Control+J</option>
+			<option value="11">Control+K</option>
+			<option value="12">Control+L</option>
+			<option value="13">Enter/Control+M</option>
+			<option value="14">Control+N</option>
+			<option value="15">Control+O</option>
+			<option value="16">Control+P</option>
+			<option value="17">Control+Q</option>
+			<option value="18">Control+R</option>
+			<option value="19">Control+S</option>
+			<option value="20">Control+T</option>
+			<option value="21">Control+U</option>
+			<option value="22">Control+V</option>
+			<option value="23">Control+W</option>
+			<option value="24">Control+X</option>
+			<option value="25">Control+Y</option>
+			<option value="26">Control+Z</option>
+			<option value="27">Escape/Ctrl+[/Ctrl,Shft+Esc</option>
+			<option value="29">Control+]</option>
+			<option value="28">Control+\</option>
+			<option value="127">Control+?</option>
+			<option value="30">Control+^</option>
+			<option value="31">Control+_</option>
+			<option value="97">A</option>
+			<option value="98">B</option>
+			<option value="99">C</option>
+			<option value="100">D</option>
+			<option value="101">E</option>
+			<option value="102">F</option>
+			<option value="103">G</option>
+			<option value="104">H</option>
+			<option value="105">I</option>
+			<option value="106">J</option>
+			<option value="107">K</option>
+			<option value="108">L</option>
+			<option value="109">M</option>
+			<option value="110">N</option>
+			<option value="111">O</option>
+			<option value="112">P</option>
+			<option value="113">Q</option>
+			<option value="114">R</option>
+			<option value="115">S</option>
+			<option value="116">T</option>
+			<option value="117">U</option>
+			<option value="118">V</option>
+			<option value="119">W</option>
+			<option value="120">X</option>
+			<option value="121">Y</option>
+			<option value="122">Z</option>
+			<option value="48">0</option>
+			<option value="49">1</option>
+			<option value="50">2</option>
+			<option value="51">3</option>
+			<option value="52">4</option>
+			<option value="53">5</option>
+			<option value="54">6</option>
+			<option value="55">7</option>
+			<option value="56">8</option>
+			<option value="57">9</option>
+			<option value="32">Space/Ctrl+Sp/Shft+Sp</option>
+			<option value="91">[ Bracket</option>
+			<option value="93">] Bracket</option>
+			<option value="123">{ Bracket</option>
+			<option value="125">} Bracket</option>
+			<option value="40">( Bracket</option>
+			<option value="41">) Bracket</option>
+			<option value="124">| Vertical bar</option>
+			<option value="94">^ Caret</option>
+			<option value="126">~ Tilde</option>
+			<option value="33">! Exclamation mark</option>
+			<option value="63">? Question mark</option>
+			<option value="34">" Quotation mark</option>
+			<option value="39">' Apostrophe</option>
+			<option value="35"># Number sign</option>
+			<option value="36">$ Dollar sign</option>
+			<option value="37">% Percent sign</option>
+			<option value="38">&amp; Ampersand</option>
+			<option value="42">* Asterisk</option>
+			<option value="43">+ Plus sign</option>
+			<option value="45">- Minus sign</option>
+			<option value="95">_ Underscore</option>
+			<option value="47">/ Slash</option>
+			<option value="92">\ Backslash</option>
+			<option value="46">. Full stop</option>
+			<option value="44">, Comma</option>
+			<option value="58">: Colon</option>
+			<option value="59">; Semicolon</option>
+			<option value="96">Grave accent</option>
+			<option value="60">&lt; Less than sign</option>
+			<option value="61">= Equals sign</option>
+			<option value="62">&gt; Greater than sign</option>
+			<option value="64">@</option>
+		</enum>
+	</defines>
+	<hacks>
+		<folder name="initial settings">
+			<hack name="time available and starting hit points">
+				<offset file="p0" value="0x04a1f"/>
+				<offset file="u0" value="0x060cf"/>
+				<offset file="p3" value="0x04e9f"/>
+				<offset file="u3" value="0x055df"/>
+				<offset file="p4" value="0x0495b"/>
+				<offset file="u4" value="0x05a8b"/>
+				<check codes="c7 06 .. .."/>
+				<read type="unsigned short int" name="starting minutes left" default="60" minval="0" maxval="65535" help="The minutes the kid has to save his princess"/>
+				<check codes="c7 06 .. .."/>
+				<read type="unsigned short int" name="starting seconds left" default="719" minval="0" maxval="719" readoperation="tofloat;multiply(100);divide(12);round;divide(100);" writeoperation="multiply(12);floor;tointeger;" help="Remaining seconds to be added to the remaining minutes. This number must be a multiple of 1/12, if it is not, it will be rounded."/>
+				<check codes="c7 06 .. .."/>
+				<read type="unsigned short int" name="starting hit points" default="3" minval="0" maxval="65535"/>
+			</hack>
+			<hack name="starting level">
+				<offset file="p0" value="0x00703"/>
+				<offset file="u0" value="0x01db3"/>
+				<offset file="p3" value="0x007d7"/>
+				<offset file="u3" value="0x00f17"/>
+				<offset file="p4" value="0x0079b"/>
+				<offset file="u4" value="0x018cb"/>
+				<check codes="c7 06 .. .."/>
+				<read type="unsigned short int" name="starting level" default="1" minval="0" maxval="16" help="It will start here, even if you come back from the titles."/>
+			</hack>
+		</folder>
+		<hack name="maximal number of hit points">
+			<offset file="p0" value="0x013ec"/>
+			<offset file="u0" value="0x02a9c"/>
+			<offset file="p3" value="0x015a7"/>
+			<offset file="u3" value="0x01ce7"/>
+			<offset file="p4" value="0x0149e"/>
+			<offset file="u4" value="0x025ce"/>
+			<check codes="a1 .. .. 40 3d"/>
+			<read type="unsigned short int" name="hit points" default="10" minval="0" maxval="65535" help="Warning: setting a value larger than 10 will cause the hit points display in the lower left corner of the screen to be overlapped by the remaining time messages, so it is discouraged. However, from the point of view of the game, its value is handled correctly."/>
+			<check codes="7e 03 b8"/>
+			<read duplicated="hit points"/>
+			<check codes="a3"/>
+		</hack>
+		<hack name="minimal and maximal level where you can save">
+			<offset file="p0" value="0x007c4"/>
+			<offset file="u0" value="0x01e74"/>
+			<offset file="p3" value="0x008b0"/>
+			<offset file="u3" value="0x00ff0"/>
+			<offset file="p4" value="0x00874"/>
+			<offset file="u4" value="0x019a4"/>
+			<check codes="83 3e .. .."/>
+			<read type="unsigned char" name="minimal level" default="2" minval="1" maxval="65535" readoperation="add(1);" writeoperation="subtract(1);"/>
+			<check codes="7e .. 83 3e .. .."/>
+			<read type="unsigned char" name="maximal level" default="14" minval="0" maxval="65534" readoperation="subtract(1);" writeoperation="add(1);"/>
+			<check codes="7d .."/>
+		</hack>
+		<hack name="flipdown">
+			<offset file="p0" value="0x4c9b"/>
+			<offset file="u0" value="0x634b"/>
+			<read type="array" name="when level starts" readoperation="if(a3 92 4e a3 5c 40 a3 8e 4e a2 2a 3d a2 29 3d a3 ee 42 a2 2e 3d 98,1,0);" writeoperation="if(1,a3 92 4e a3 5c 40 a3 8e 4e a2 2a 3d a2 29 3d a3 ee 42 a2 2e 3d 98,89 26 92 4e a3 5c 40 a3 8e 4e a2 2a 3d a2 29 3d a3 ee 42 a2 2e 3d);" help="This feature flips down the level deactivating the invert screen potion and key (Shift+i).">
+				<option value="1" default="true">Disabled</option>
+				<option value="0">Enabled</option>
+			</read>
+		</hack>
+		<folder name="environment options">
+			<hack name="level environment">
+				<offset file="p0" value="0x1ace8"/>
+				<offset file="u0" value="0x1c840"/>
+				<offset file="p3" value="0x1b9ac"/>
+				<offset file="u3" value="0x1c5c4"/>
+				<offset file="p4" value="0x17d4a"/>
+				<offset file="u4" value="0x18f3a"/>
+				<check codes="74 00"/>
+				<read type="char" name="environment demo level" minval="0" maxval="1" enum="environment" default="0"/>
+				<read type="char" name="environment level 1" minval="0" maxval="1" enum="environment" default="0"/>
+				<read type="char" name="environment level 2" minval="0" maxval="1" enum="environment" default="0"/>
+				<read type="char" name="environment level 3" minval="0" maxval="1" enum="environment" default="0"/>
+				<read type="char" name="environment level 4" minval="0" maxval="1" enum="environment" default="1"/>
+				<read type="char" name="environment level 5" minval="0" maxval="1" enum="environment" default="1"/>
+				<read type="char" name="environment level 6" minval="0" maxval="1" enum="environment" default="1"/>
+				<read type="char" name="environment level 7" minval="0" maxval="1" enum="environment" default="0"/>
+				<read type="char" name="environment level 8" minval="0" maxval="1" enum="environment" default="0"/>
+				<read type="char" name="environment level 9" minval="0" maxval="1" enum="environment" default="0"/>
+				<read type="char" name="environment level 10" minval="0" maxval="1" enum="environment" default="1"/>
+				<read type="char" name="environment level 11" minval="0" maxval="1" enum="environment" default="1"/>
+				<read type="char" name="environment level 12a" minval="0" maxval="1" enum="environment" default="0"/>
+				<read type="char" name="environment level 12b" minval="0" maxval="1" enum="environment" default="0"/>
+				<read type="char" name="environment princess level" minval="0" maxval="1" enum="environment" default="1"/>
+				<read type="char" name="environment potion level" minval="0" maxval="1" enum="environment" default="0"/>
+			</hack>
+			<hack name="WDA in palace environment">
+				<offset file="p0" value="0x0a7b3"/>
+				<offset file="u0" value="0x0be63"/>
+				<offset file="p3" value="0x0ac5f"/>
+				<offset file="u3" value="0x0b39f"/>
+				<offset file="p4" value="0x0a71b"/>
+				<offset file="u4" value="0x0b84b"/>
+				<check codes="8b 1e .. .. 38 a7 .. .."/>
+				<read type="unsigned char" name="WDA in palace" minval="0" maxval="255" readoperation="if(116,1,0);" writeoperation="if(1,116,235);" help="You have to be very careful if you want to enable this option because it uses the dungeon environment wall drawing algorithm in the palace environment as well, you must import the extra resources to your palace environment file with PR. For more details, see &lt;a href='http://popuw.com/forum/viewtopic.php?t=557'&gt;the vpalace.dat thread&lt;/a&gt;.">
+					<option value="1" default="true">Disabled</option>
+					<option value="0">Enabled</option>
+				</read>
+				<offset file="p0" value="0x0c513"/>
+				<offset file="u0" value="0x0dbc3"/>
+				<offset file="p3" value="0x0ca07"/>
+				<offset file="u3" value="0x0d147"/>
+				<offset file="p4" value="0x0c4c3"/>
+				<offset file="u4" value="0x0d5f3"/>
+				<check codes="8b 1e .. .. 80 bf .. .. 01"/>
+				<read duplicated="WDA in palace" minval="0" maxval="255" writeoperation="if(1,27,184);"/>
+				<read duplicated="WDA in palace" minval="0" maxval="255" writeoperation="if(1,192,1);"/>
+				<read duplicated="WDA in palace" minval="0" maxval="255" writeoperation="if(1,247,0);"/>
+				<read duplicated="WDA in palace" minval="0" maxval="255" writeoperation="if(1,216,144);"/>
+				<offset file="p0" value="0x0ac92"/>
+				<offset file="u0" value="0x0c342"/>
+				<offset file="p3" value="0x0b13e"/>
+				<offset file="u3" value="0x0b87e"/>
+				<offset file="p4" value="0x0abfa"/>
+				<offset file="u4" value="0x0bd2a"/>
+				<check codes="8b 1e .. .. 80 bf .. .. 00"/>
+				<read duplicated="WDA in palace" minval="0" maxval="255" writeoperation="if(1,116,235);"/>
+			</hack>
+		</folder>
+		<folder name="guard information">
+			<hack name="guard base hit points">
+				<offset file="p0" value="0x1b8a8"/>
+				<offset file="u0" value="0x1d46a"/>
+				<offset file="p3" value="0x1c6c5"/>
+				<offset file="u3" value="0x1d35c"/>
+				<offset file="p4" value="0x18a97"/>
+				<offset file="u4" value="0x19d06"/>
+				<read type="char" name="demo level" default="4" minval="0" maxval="6"/>
+				<read type="char" name="level 1" default="3" minval="0" maxval="6"/>
+				<read type="char" name="level 2" default="3" minval="0" maxval="6"/>
+				<read type="char" name="level 3" default="3" minval="0" maxval="6"/>
+				<read type="char" name="level 4" default="3" minval="0" maxval="6"/>
+				<read type="char" name="level 5" default="4" minval="0" maxval="6"/>
+				<read type="char" name="level 6" default="5" minval="0" maxval="6"/>
+				<read type="char" name="level 7" default="4" minval="0" maxval="6"/>
+				<read type="char" name="level 8" default="4" minval="0" maxval="6"/>
+				<read type="char" name="level 9" default="5" minval="0" maxval="6"/>
+				<read type="char" name="level 10" default="5" minval="0" maxval="6"/>
+				<read type="char" name="level 11" default="5" minval="0" maxval="6"/>
+				<read type="char" name="level 12a" default="4" minval="0" maxval="6"/>
+				<read type="char" name="level 12b" default="6" minval="0" maxval="6"/>
+				<read type="char" name="princess level" default="0" minval="0" maxval="6"/>
+				<read type="char" name="potion level" default="0" minval="0" maxval="6"/>
+			</hack>
+			<hack name="guard types" help="Note that this only affects the resource file that is loaded and therefore the bitmaps that are displayed. For example, if you set up level 3 to use the Jaffar sprite, it will remain unkillable. Killing guards using the skeleton or shadow sprite or meeting a guard when no resource is loaded causes the game to crash, since it would need to load a nonexistent resource.">
+				<offset file="u0" value="0x1c964"/>
+				<offset file="u3" value="0x1c702"/>
+				<offset file="u4" value="0x1905e"/>
+				<read type="signed short int" name="guard resources demo level" minval="-1" maxval="4" enum="guards" default="0"/>
+				<read type="signed short int" name="guard resources level 1" minval="-1" maxval="4" enum="guards" default="0"/>
+				<read type="signed short int" name="guard resources level 2" minval="-1" maxval="4" enum="guards" default="0"/>
+				<read type="signed short int" name="guard resources level 3" minval="-1" maxval="4" enum="guards" default="2"/>
+				<read type="signed short int" name="guard resources level 4" minval="-1" maxval="4" enum="guards" default="0"/>
+				<read type="signed short int" name="guard resources level 5" minval="-1" maxval="4" enum="guards" default="0"/>
+				<read type="signed short int" name="guard resources level 6" minval="-1" maxval="4" enum="guards" default="1"/>
+				<read type="signed short int" name="guard resources level 7" minval="-1" maxval="4" enum="guards" default="0"/>
+				<read type="signed short int" name="guard resources level 8" minval="-1" maxval="4" enum="guards" default="0"/>
+				<read type="signed short int" name="guard resources level 9" minval="-1" maxval="4" enum="guards" default="0"/>
+				<read type="signed short int" name="guard resources level 10" minval="-1" maxval="4" enum="guards" default="0"/>
+				<read type="signed short int" name="guard resources level 11" minval="-1" maxval="4" enum="guards" default="0"/>
+				<read type="signed short int" name="guard resources level 12a" minval="-1" maxval="4" enum="guards" default="4"/>
+				<read type="signed short int" name="guard resources level 12b" minval="-1" maxval="4" enum="guards" default="3"/>
+				<read type="signed short int" name="guard resources princess level" minval="-1" maxval="4" enum="guards" default="-1"/>
+				<read type="signed short int" name="guard resources potion level" minval="-1" maxval="4" enum="guards" default="-1"/>
+			</hack>
+		</folder>
+		<hack name="colours" help="this is the hard-coded palette, here you can edit colours from the game that aren't in the resources. The values are in RGB, allowed numbers are from 0 to 255 (they will be rounded to the nearer multiple of 4 because the format doesn't support a better definition).">
+			<offset file="p0" value="0x1d141"/>
+			<offset file="u0" value="0x1f136"/>
+			<offset file="p3" value="0x1df5e"/>
+			<offset file="u3" value="0x1f02a"/>
+			<offset file="p4" value="0x1a335"/>
+			<offset file="u4" value="0x1b9de"/>
+			<group name="background" widget="color">
+				<read type="char" name="background-red" minval="0" maxval="63" default="0" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="background-green" minval="0" maxval="63" default="0" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="background-blue" minval="0" maxval="63" default="0" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+			</group>
+			<group name="background1" widget="color">
+				<read type="char" name="background1-red" minval="0" maxval="63" default="0" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="background1-green" minval="0" maxval="63" default="0" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="background1-blue" minval="0" maxval="63" default="42" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+			</group>
+			<group name="feather fall flashing" widget="color">
+				<read type="char" name="feather fall flashing-red" minval="0" maxval="63" default="0" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="feather fall flashing-green" minval="0" maxval="63" default="42" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="feather fall flashing-blue" minval="0" maxval="63" default="0" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+			</group>
+			<group name="background3" widget="color">
+				<read type="char" name="background3-red" minval="0" maxval="63" default="0" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="background3-green" minval="0" maxval="63" default="42" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="background3-blue" minval="0" maxval="63" default="42" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+			</group>
+			<group name="health or life flashing" widget="color">
+				<read type="char" name="health or life flashing-red" minval="0" maxval="63" default="42" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="health or life flashing-green" minval="0" maxval="63" default="0" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="health or life flashing-blue" minval="0" maxval="63" default="0" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+			</group>
+			<group name="background5" widget="color">
+				<read type="char" name="background5-red" minval="0" maxval="63" default="42" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="background5-green" minval="0" maxval="63" default="0" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="background5-blue" minval="0" maxval="63" default="42" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+			</group>
+			<group name="background6" widget="color">
+				<read type="char" name="background6-red" minval="0" maxval="63" default="42" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="background6-green" minval="0" maxval="63" default="21" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="background6-blue" minval="0" maxval="63" default="0" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+			</group>
+			<group name="stars in the princess room 1" widget="color">
+				<read type="char" name="stars in the princess room 1-red" minval="0" maxval="63" default="42" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="stars in the princess room 1-green" minval="0" maxval="63" default="42" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="stars in the princess room 1-blue" minval="0" maxval="63" default="42" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+			</group>
+			<group name="stars in the princess room 2 and dialog shadow" widget="color">
+				<read type="char" name="stars in the princess room 2 and dialog shadow-red" minval="0" maxval="63" default="21" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="stars in the princess room 2 and dialog shadow-green" minval="0" maxval="63" default="21" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="stars in the princess room 2 and dialog shadow-blue" minval="0" maxval="63" default="21" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+			</group>
+			<group name="bubbles of the blue potion" widget="color">
+				<read type="char" name="bubbles of the blue potion-red" minval="0" maxval="63" default="21" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="bubbles of the blue potion-green" minval="0" maxval="63" default="21" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="bubbles of the blue potion-blue" minval="0" maxval="63" default="63" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+			</group>
+			<group name="bubbles of the green potion" widget="color">
+				<read type="char" name="bubbles of the green potion-red" minval="0" maxval="63" default="21" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="bubbles of the green potion-green" minval="0" maxval="63" default="63" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="bubbles of the green potion-blue" minval="0" maxval="63" default="21" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+			</group>
+			<group name="backgroundb" widget="color">
+				<read type="char" name="backgroundb-red" minval="0" maxval="63" default="21" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="backgroundb-green" minval="0" maxval="63" default="63" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="backgroundb-blue" minval="0" maxval="63" default="63" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+			</group>
+			<group name="losing life or die flashing" widget="color">
+				<read type="char" name="losing life or die flashing-red" minval="0" maxval="63" default="63" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="losing life or die flashing-green" minval="0" maxval="63" default="21" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="losing life or die flashing-blue" minval="0" maxval="63" default="21" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+			</group>
+			<group name="backgroundd" widget="color">
+				<read type="char" name="backgroundd-red" minval="0" maxval="63" default="63" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="backgroundd-green" minval="0" maxval="63" default="21" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="backgroundd-blue" minval="0" maxval="63" default="63" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+			</group>
+			<group name="getting sword flashing" widget="color">
+				<read type="char" name="getting sword flashing-red" minval="0" maxval="63" default="63" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="getting sword flashing-green" minval="0" maxval="63" default="63" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="getting sword flashing-blue" minval="0" maxval="63" default="21" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+			</group>
+			<group name="font color" widget="color">
+				<read type="char" name="font color-red" minval="0" maxval="63" default="63" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="font color-green" minval="0" maxval="63" default="63" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+				<read type="char" name="font color-blue" minval="0" maxval="63" default="63" readoperation="multiply(4.0615);floor;" writeoperation="tofloat;divide(4);floor;tointeger;"/>
+			</group>
+		</hack>
+		<hack name="titles skipping" help="When starting prince, this level will load instantly. Note that pressing Ctrl+R will return to the level that was specified above, in the Starting level hack. If it is not level 1, you'd better set that one as well.">
+			<offset file="p0" value="0x003af"/>
+			<offset file="u0" value="0x01a5f"/>
+			<offset file="p3" value="0x00438"/>
+			<offset file="u3" value="0x00b78"/>
+			<offset file="p4" value="0x00422"/>
+			<offset file="u4" value="0x01552"/>
+			<check codes="74"/>
+			<read duplicated="level to load" writeoperation="if(off,54,48);" type="unsigned char"/>
+			<check codes="c7 46 f8 0e 00 eb 03 ff 4e f8 83 7e f8 00 7c"/>
+			<read duplicated="level to load" writeoperation="if(off,38,32);" type="unsigned char"/>
+			<offset file="p0" value="0x003e1"/>
+			<offset file="u0" value="0x01a91"/>
+			<offset file="p3" value="0x0046a"/>
+			<offset file="u3" value="0x00baa"/>
+			<offset file="p4" value="0x00454"/>
+			<offset file="u4" value="0x01584"/>
+			<read duplicated="level to load" writeoperation="if(off,139,184);" type="unsigned char"/>
+			<read name="level to load" readoperation="if(63558,off,~);" default="63558" writeoperation="if(off,63558,~);" type="unsigned short int" help="This is the level you would like to load instead of the title sequence, use the keyword 'off' to deactivate this option."/>
+		</hack>
+<!-- new hacks in beta mode -->
+		<hack name="the effect of Shift+L in non-cheat mode">
+			<offset file="p0" value="0x00858"/>
+			<offset file="u0" value="0x01f08"/>
+			<offset file="p3" value="0x00951"/>
+			<offset file="u3" value="0x01091"/>
+			<offset file="p4" value="0x00915"/>
+			<offset file="u4" value="0x01a45"/>
+			<check codes="83 3e .. .."/>
+			<read name="first level where shift+L is denied" default="3" readoperation="add(1);" writeoperation="subtract(1);" minval="0" maxval="255" type="unsigned char"/>
+			<check codes="7e .. 83 3e .. .. 00 75 .. e9 .. .."/>
+			<offset file="p0" value="0x00894"/>
+			<offset file="u0" value="0x01f44"/>
+			<offset file="p3" value="0x00978"/>
+			<offset file="u3" value="0x010b8"/>
+			<offset file="p4" value="0x0093c"/>
+			<offset file="u4" value="0x01a6c"/>
+			<check codes="a1 .. .. 40 a3 .. .. 83 3e .. .. 00 75 .. 83 3e .. .."/>
+			<read name="Reduce if there are more than" help="Only reduce time if there are more than X minutes left." default="15" minval="0" maxval="255" type="unsigned char"/>
+			<check codes="7e .. c7 06 .. .."/>
+			<read name="Reduce to minutes" help="In minutes." default="15" minval="0" maxval="65535" type="unsigned short int"/>
+			<check codes="c7 06 .. .."/>
+			<read name="And seconds" default="719" minval="0" maxval="719" type="unsigned short int" readoperation="tofloat;multiply(100);divide(12);round;divide(100);" writeoperation="multiply(12);floor;tointeger;"/>
+		</hack>
+		<folder name="File Names">
+			<hack name="General Purpose">
+				<offset file="p0" value="0x1af9b"/>
+				<offset file="p3" value="0x1bc67"/>
+				<offset file="p4" value="0x17fcd"/>
+				<offset file="u0" value="0x1cafa"/>
+				<offset file="u3" value="0x1c883"/>
+				<offset file="u4" value="0x191c1"/>
+				<read name="Princess and Vizier" readoperation="tolower;" default="pv.dat" writeoperation="toupper;" type="string" size="6"/>
+				<offset file="p0" value="0x1b7dd"/>
+				<offset file="p3" value="0x1c5fa"/>
+				<offset file="p4" value="0x189cc"/>
+				<offset file="u0" value="0x1d391"/>
+				<offset file="u3" value="0x1d283"/>
+				<offset file="u4" value="0x19c2d"/>
+				<read duplicated="Princess and Vizier" writeoperation="tolower;"/>
+				<offset file="p0" value="0x1b7e4"/>
+				<offset file="p3" value="0x1c601"/>
+				<offset file="p4" value="0x189d3"/>
+				<offset file="u0" value="0x1d398"/>
+				<offset file="u3" value="0x1d28a"/>
+				<offset file="u4" value="0x19c34"/>
+				<read duplicated="Princess and Vizier" writeoperation="tolower;"/>
+				<offset file="p0" value="0x1b7eb"/>
+				<offset file="p3" value="0x1c608"/>
+				<offset file="p4" value="0x189da"/>
+				<offset file="u0" value="0x1d39f"/>
+				<offset file="u3" value="0x1d291"/>
+				<offset file="u4" value="0x19c3b"/>
+				<read duplicated="Princess and Vizier" writeoperation="tolower;"/>
+				<offset file="p0" value="0x1b7f2"/>
+				<offset file="p3" value="0x1c60f"/>
+				<offset file="p4" value="0x189e1"/>
+				<offset file="u0" value="0x1d3a6"/>
+				<offset file="u3" value="0x1d298"/>
+				<offset file="u4" value="0x19c42"/>
+				<read duplicated="Princess and Vizier" writeoperation="tolower;"/>
+				<offset file="p0" value="0x1aff3"/>
+				<offset file="p3" value="0x1bcbf"/>
+				<offset file="p4" value="0x18025"/>
+				<offset file="u0" value="0x1cb52"/>
+				<offset file="u3" value="0x1c8db"/>
+				<offset file="u4" value="0x19219"/>
+				<read name="Levels" readoperation="tolower;" default="levels.dat" writeoperation="toupper;" type="string" size="10"/>
+				<offset file="p0" value="0x1ae28"/>
+				<offset file="p3" value="0x1bb26"/>
+				<offset file="p4" value="0x17eaa"/>
+				<offset file="u0" value="0x1c984"/>
+				<offset file="u3" value="0x1c742"/>
+				<offset file="u4" value="0x1909e"/>
+				<read duplicated="Levels" writeoperation="tolower;"/>
+				<offset file="p0" value="0x1ae72"/>
+				<offset file="p3" value="0x1bb70"/>
+				<offset file="p4" value="0x17ed6"/>
+				<offset file="u0" value="0x1c9ce"/>
+				<offset file="u3" value="0x1c78c"/>
+				<offset file="u4" value="0x190ca"/>
+				<read duplicated="Levels" writeoperation="tolower;"/>
+				<offset file="p0" value="0x1ae93"/>
+				<offset file="p3" value="0x1bb91"/>
+				<offset file="p4" value="0x17ef7"/>
+				<offset file="u0" value="0x1c9ef"/>
+				<offset file="u3" value="0x1c7ad"/>
+				<offset file="u4" value="0x190eb"/>
+				<read duplicated="Levels" writeoperation="tolower;"/>
+				<offset file="p0" value="0x1afe9"/>
+				<offset file="p3" value="0x1bcb5"/>
+				<offset file="p4" value="0x1801b"/>
+				<offset file="u0" value="0x1cb48"/>
+				<offset file="u3" value="0x1c8d1"/>
+				<offset file="u4" value="0x1920f"/>
+				<read name="Titles" readoperation="tolower;" default="title.dat" writeoperation="toupper;" type="string" size="9"/>
+				<offset file="p0" value="0x1acd6"/>
+				<offset file="p3" value="0x1b99a"/>
+				<offset file="p4" value="0x17d38"/>
+				<offset file="u0" value="0x1c82e"/>
+				<offset file="u3" value="0x1c5b2"/>
+				<offset file="u4" value="0x18f28"/>
+				<read duplicated="Titles" writeoperation="tolower;"/>
+				<offset file="p0" value="0x1ace0"/>
+				<offset file="p3" value="0x1b9a4"/>
+				<offset file="p4" value="0x17d42"/>
+				<offset file="u0" value="0x1c838"/>
+				<offset file="u3" value="0x1c5bc"/>
+				<offset file="u4" value="0x18f32"/>
+				<read duplicated="Titles" writeoperation="tolower;"/>
+				<offset file="p0" value="0x1aee2"/>
+				<offset file="p3" value="0x1bbae"/>
+				<offset file="p4" value="0x17f14"/>
+				<offset file="u0" value="0x1ca41"/>
+				<offset file="u3" value="0x1c7ca"/>
+				<offset file="u4" value="0x19108"/>
+				<read name="Sword and Potions" readoperation="tolower;" default="prince.dat" writeoperation="toupper;" type="string" size="10"/>
+				<offset file="p0" value="0x1aab8"/>
+				<offset file="p3" value="0x1b7dd"/>
+				<offset file="p4" value="0x17bb5"/>
+				<offset file="u0" value="0x1c5fb"/>
+				<offset file="u3" value="0x1c3e0"/>
+				<offset file="u4" value="0x18d90"/>
+				<read duplicated="Sword and Potions" writeoperation="tolower;"/>
+				<offset file="p0" value="0x1b071"/>
+				<offset file="p3" value="0x1bd3e"/>
+				<offset file="p4" value="0x180a4"/>
+				<offset file="u0" value="0x1cbd0"/>
+				<offset file="u3" value="0x1c95a"/>
+				<offset file="u4" value="0x19298"/>
+				<read duplicated="Titles" writeoperation="tolower;"/>
+			</hack>
+			<hack name="Characters">
+				<offset file="p0" value="0x1af93"/>
+				<offset file="p3" value="0x1bc5f"/>
+				<offset file="p4" value="0x17fc5"/>
+				<offset file="u0" value="0x1caf2"/>
+				<offset file="u3" value="0x1c87b"/>
+				<offset file="u4" value="0x191b9"/>
+				<read name="The prince" readoperation="tolower;" default="kid.dat" writeoperation="toupper;" type="string" size="7"/>
+				<offset file="p0" value="0x1acc6"/>
+				<offset file="p3" value="0x1b98a"/>
+				<offset file="p4" value="0x17d28"/>
+				<offset file="u0" value="0x1c81e"/>
+				<offset file="u3" value="0x1c5a2"/>
+				<offset file="u4" value="0x18f18"/>
+				<read duplicated="The prince" writeoperation="tolower;"/>
+				<offset file="p0" value="0x1acce"/>
+				<offset file="p3" value="0x1b992"/>
+				<offset file="p4" value="0x17d30"/>
+				<offset file="u0" value="0x1c826"/>
+				<offset file="u3" value="0x1c5aa"/>
+				<offset file="u4" value="0x18f20"/>
+				<read duplicated="The prince" writeoperation="tolower;"/>
+				<offset file="p0" value="0x1ae6a"/>
+				<offset file="p3" value="0x1bb68"/>
+				<offset file="p4" value="0x17ece"/>
+				<offset file="u0" value="0x1c9c6"/>
+				<offset file="u3" value="0x1c784"/>
+				<offset file="u4" value="0x190c2"/>
+				<read duplicated="The prince" writeoperation="tolower;"/>
+				<offset file="p0" value="0x1ada2"/>
+				<offset file="p3" value="0x1ba80"/>
+				<offset file="p4" value="0x17e04"/>
+				<offset file="u0" value="0x1c8fa"/>
+				<offset file="u3" value="0x1c698"/>
+				<offset file="u4" value="0x18ff4"/>
+				<read name="Jaffar" readoperation="tolower;" default="vizier.dat" writeoperation="toupper;" type="string" size="10"/>
+				<offset file="p0" value="0x1afde"/>
+				<offset file="p3" value="0x1bcaa"/>
+				<offset file="p4" value="0x18010"/>
+				<offset file="u0" value="0x1cb3d"/>
+				<offset file="u3" value="0x1c8c6"/>
+				<offset file="u4" value="0x19204"/>
+				<read duplicated="Jaffar" writeoperation="toupper;"/>
+				<offset file="p0" value="0x1ad99"/>
+				<offset file="p3" value="0x1ba77"/>
+				<offset file="p4" value="0x17dfb"/>
+				<offset file="u0" value="0x1c8f1"/>
+				<offset file="u3" value="0x1c68f"/>
+				<offset file="u4" value="0x18feb"/>
+				<read name="Skeleton" readoperation="tolower;" default="skel.dat" writeoperation="toupper;" type="string" size="8"/>
+				<offset file="p0" value="0x1afd5"/>
+				<offset file="p3" value="0x1bca1"/>
+				<offset file="p4" value="0x18007"/>
+				<offset file="u0" value="0x1cb34"/>
+				<offset file="u3" value="0x1c8bd"/>
+				<offset file="u4" value="0x191fb"/>
+				<read duplicated="Skeleton" writeoperation="toupper;"/>
+				<offset file="p0" value="0x1adad"/>
+				<offset file="p3" value="0x1ba8b"/>
+				<offset file="p4" value="0x17e0f"/>
+				<offset file="u0" value="0x1c905"/>
+				<offset file="u3" value="0x1c6a3"/>
+				<offset file="u4" value="0x18fff"/>
+				<read name="Shadow Guy" readoperation="tolower;" default="shadow.dat" writeoperation="toupper;" type="string" size="10"/>
+				<offset file="p0" value="0x1afca"/>
+				<offset file="p3" value="0x1bc96"/>
+				<offset file="p4" value="0x17ffc"/>
+				<offset file="u0" value="0x1cb29"/>
+				<offset file="u3" value="0x1c8b2"/>
+				<offset file="u4" value="0x191f0"/>
+				<read duplicated="Shadow Guy" writeoperation="toupper;"/>
+				<offset file="p0" value="0x1ad91"/>
+				<offset file="p3" value="0x1ba6f"/>
+				<offset file="p4" value="0x17df3"/>
+				<offset file="u0" value="0x1c8e9"/>
+				<offset file="u3" value="0x1c687"/>
+				<offset file="u4" value="0x18fe3"/>
+				<read name="Fat Guy" readoperation="tolower;" default="fat.dat" writeoperation="toupper;" type="string" size="7"/>
+				<offset file="p0" value="0x1afc2"/>
+				<offset file="p3" value="0x1bc8e"/>
+				<offset file="p4" value="0x17ff4"/>
+				<offset file="u0" value="0x1cb21"/>
+				<offset file="u3" value="0x1c8aa"/>
+				<offset file="u4" value="0x191e8"/>
+				<read duplicated="Fat Guy" writeoperation="toupper;"/>
+				<offset file="p0" value="0x1ad87"/>
+				<offset file="p3" value="0x1ba65"/>
+				<offset file="p4" value="0x17de9"/>
+				<offset file="u0" value="0x1c8df"/>
+				<offset file="u3" value="0x1c67d"/>
+				<offset file="u4" value="0x18fd9"/>
+				<read name="Guard graphics" readoperation="tolower;" default="guard.dat" writeoperation="toupper;" type="string" size="9"/>
+				<offset file="p0" value="0x1afa2"/>
+				<offset file="p3" value="0x1bc6e"/>
+				<offset file="p4" value="0x17fd4"/>
+				<offset file="u0" value="0x1cb01"/>
+				<offset file="u3" value="0x1c88a"/>
+				<offset file="u4" value="0x191c8"/>
+				<read duplicated="Guard graphics" writeoperation="toupper;"/>
+				<offset file="p0" value="0x1addb"/>
+				<offset file="p3" value="0x1bab9"/>
+				<offset file="p4" value="0x17e3d"/>
+				<offset file="u0" value="0x1c933"/>
+				<offset file="u3" value="0x1c6d1"/>
+				<offset file="u4" value="0x1902d"/>
+				<read name="Guards 1" readoperation="tolower;" default="guard1.dat" writeoperation="toupper;" type="string" size="10"/>
+				<offset file="p0" value="0x1afac"/>
+				<offset file="p3" value="0x1bc78"/>
+				<offset file="p4" value="0x17fde"/>
+				<offset file="u0" value="0x1cb0b"/>
+				<offset file="u3" value="0x1c894"/>
+				<offset file="u4" value="0x191d2"/>
+				<read duplicated="Guards 1" writeoperation="toupper;"/>
+				<offset file="p0" value="0x1ade6"/>
+				<offset file="p3" value="0x1bac4"/>
+				<offset file="p4" value="0x17e48"/>
+				<offset file="u0" value="0x1c93e"/>
+				<offset file="u3" value="0x1c6dc"/>
+				<offset file="u4" value="0x19038"/>
+				<read name="Guards 2" readoperation="tolower;" default="guard2.dat" writeoperation="toupper;" type="string" size="10"/>
+				<offset file="p0" value="0x1afb7"/>
+				<offset file="p3" value="0x1bc83"/>
+				<offset file="p4" value="0x17fe9"/>
+				<offset file="u0" value="0x1cb16"/>
+				<offset file="u3" value="0x1c89f"/>
+				<offset file="u4" value="0x191dd"/>
+				<read duplicated="Guards 2" writeoperation="toupper;"/>
+			</hack>
+			<hack name="Sound Resources">
+				<offset file="p0" value="0x1af2e"/>
+				<offset file="p3" value="0x1bbfa"/>
+				<offset file="p4" value="0x17f60"/>
+				<offset file="u0" value="0x1ca8d"/>
+				<offset file="u3" value="0x1c816"/>
+				<offset file="u4" value="0x19154"/>
+				<read name="Midi Sounds 1" readoperation="tolower;" default="midisnd1.dat" writeoperation="toupper;" type="string" size="12"/>
+				<offset file="p0" value="0x1ad53"/>
+				<offset file="p3" value="0x1b9fd"/>
+				<offset file="p4" value="0x17d9b"/>
+				<offset file="u0" value="0x1c8ab"/>
+				<offset file="u3" value="0x1c615"/>
+				<offset file="u4" value="0x18f8b"/>
+				<read duplicated="Midi Sounds 1" writeoperation="tolower;"/>
+				<offset file="p0" value="0x1af3b"/>
+				<offset file="p3" value="0x1bc07"/>
+				<offset file="p4" value="0x17f6d"/>
+				<offset file="u0" value="0x1ca9a"/>
+				<offset file="u3" value="0x1c823"/>
+				<offset file="u4" value="0x19161"/>
+				<read name="Midi Sounds 2" readoperation="tolower;" default="midisnd2.dat" writeoperation="toupper;" type="string" size="12"/>
+				<offset file="p0" value="0x1ad7a"/>
+				<offset file="p3" value="0x1ba3e"/>
+				<offset file="p4" value="0x17dcf"/>
+				<offset file="u0" value="0x1c8d2"/>
+				<offset file="u3" value="0x1c656"/>
+				<offset file="u4" value="0x18fbf"/>
+				<read duplicated="Midi Sounds 2" writeoperation="tolower;"/>
+				<offset file="p0" value="0x1af14"/>
+				<offset file="p3" value="0x1bbe0"/>
+				<offset file="p4" value="0x17f46"/>
+				<offset file="u0" value="0x1ca73"/>
+				<offset file="u3" value="0x1c7fc"/>
+				<offset file="u4" value="0x1913a"/>
+				<read name="Speaker Sounds 1" readoperation="tolower;" default="ibm_snd1.dat" writeoperation="toupper;" type="string" size="12"/>
+				<offset file="p0" value="0x1ad2c"/>
+				<offset file="p3" value="0x1b9f0"/>
+				<offset file="p4" value="0x17d8e"/>
+				<offset file="u0" value="0x1c884"/>
+				<offset file="u3" value="0x1c608"/>
+				<offset file="u4" value="0x18f7e"/>
+				<read duplicated="Speaker Sounds 1" writeoperation="tolower;"/>
+				<offset file="p0" value="0x1af21"/>
+				<offset file="p3" value="0x1bbed"/>
+				<offset file="p4" value="0x17f53"/>
+				<offset file="u0" value="0x1ca80"/>
+				<offset file="u3" value="0x1c809"/>
+				<offset file="u4" value="0x19147"/>
+				<read name="Speaker Sounds 2" readoperation="tolower;" default="ibm_snd2.dat" writeoperation="toupper;" type="string" size="12"/>
+				<offset file="p0" value="0x1ad60"/>
+				<offset file="p3" value="0x1ba31"/>
+				<offset file="p4" value="0x17dc2"/>
+				<offset file="u0" value="0x1c8b8"/>
+				<offset file="u3" value="0x1c649"/>
+				<offset file="u4" value="0x18fb2"/>
+				<read duplicated="Speaker Sounds 2" writeoperation="tolower;"/>
+				<offset file="p0" value="0x1aeed"/>
+				<offset file="p3" value="0x1bbb9"/>
+				<offset file="p4" value="0x17f1f"/>
+				<offset file="u0" value="0x1ca4c"/>
+				<offset file="u3" value="0x1c7d5"/>
+				<offset file="u4" value="0x19113"/>
+				<read name="Wave Sounds 1" readoperation="tolower;" default="digisnd1.dat" writeoperation="toupper;" type="string" size="12"/>
+				<offset file="p0" value="0x1ad39"/>
+				<offset file="p3" value="0x1ba0a"/>
+				<offset file="p4" value="0x17da8"/>
+				<offset file="u0" value="0x1c891"/>
+				<offset file="u3" value="0x1c622"/>
+				<offset file="u4" value="0x18f98"/>
+				<read duplicated="Wave Sounds 1" writeoperation="tolower;"/>
+				<offset file="p0" value="0x1aefa"/>
+				<offset file="p3" value="0x1bbc6"/>
+				<offset file="p4" value="0x17f2c"/>
+				<offset file="u0" value="0x1ca59"/>
+				<offset file="u3" value="0x1c7e2"/>
+				<offset file="u4" value="0x19120"/>
+				<read name="Wave Sounds 2" readoperation="tolower;" default="digisnd2.dat" writeoperation="toupper;" type="string" size="12"/>
+				<offset file="p0" value="0x1ad6d"/>
+				<offset file="p3" value="0x1ba4b"/>
+				<offset file="p4" value="0x17ddc"/>
+				<offset file="u0" value="0x1c8c5"/>
+				<offset file="u3" value="0x1c663"/>
+				<offset file="u4" value="0x18fcc"/>
+				<read duplicated="Wave Sounds 2" writeoperation="tolower;"/>
+				<offset file="p0" value="0x1af07"/>
+				<offset file="p3" value="0x1bbd3"/>
+				<offset file="p4" value="0x17f39"/>
+				<offset file="u0" value="0x1ca66"/>
+				<offset file="u3" value="0x1c7ef"/>
+				<offset file="u4" value="0x1912d"/>
+				<read name="Wave Sounds 3" readoperation="tolower;" default="digisnd3.dat" writeoperation="toupper;" type="string" size="12"/>
+				<offset file="p0" value="0x1ad46"/>
+				<offset file="p3" value="0x1ba17"/>
+				<offset file="p4" value="0x17db5"/>
+				<offset file="u0" value="0x1c89e"/>
+				<offset file="u3" value="0x1c62f"/>
+				<offset file="u4" value="0x18fa5"/>
+				<read duplicated="Wave Sounds 3" writeoperation="tolower;"/>
+			</hack>
+		</folder>
+		<folder name="Game messages" help="The character % is used as an escape character used to replace some needed placeholders. We are using the &lt;a href='http://www.cplusplus.com/reference/clibrary/cstdio/printf.html'&gt;printf syntax&lt;/a&gt;. So a % must be written as %%, a decimal as %d (%5d is a decimal of 5 spaces, %05d a decimal completed with zeros to fit the 5 spaces), a character as %c, a text string as %s. If you want more complicated replacements read the referred documentation.">
+			<hack name="Time messages">
+				<offset file="p0" value="0x1b30a"/>
+				<offset file="p3" value="0x1c141"/>
+				<offset file="p4" value="0x18483"/>
+				<offset file="u0" value="0x1cebe"/>
+				<offset file="u3" value="0x1cdca"/>
+				<offset file="u4" value="0x196e4"/>
+				<read name="Text '1 SECOND LEFT'" default="1 SECOND LEFT" type="string" size="13"/>
+				<offset file="p0" value="0x1b318"/>
+				<offset file="p3" value="0x1c14f"/>
+				<offset file="p4" value="0x18491"/>
+				<offset file="u0" value="0x1cecc"/>
+				<offset file="u3" value="0x1cdd8"/>
+				<offset file="u4" value="0x196f2"/>
+				<read name="Text '%d SECONDS LEFT'" default="%d SECONDS LEFT" type="string" size="15"/>
+				<offset file="p0" value="0x1b328"/>
+				<offset file="p3" value="0x1c15f"/>
+				<offset file="p4" value="0x184a1"/>
+				<offset file="u0" value="0x1cedc"/>
+				<offset file="u3" value="0x1cde8"/>
+				<offset file="u4" value="0x19702"/>
+				<read name="Text '%d MINUTES LEFT'" default="%d MINUTES LEFT" type="string" size="15"/>
+				<offset file="p0" value="0x1b338"/>
+				<offset file="p3" value="0x1c16f"/>
+				<offset file="p4" value="0x184b1"/>
+				<offset file="u0" value="0x1ceec"/>
+				<offset file="u3" value="0x1cdf8"/>
+				<offset file="u4" value="0x19712"/>
+				<read name="Text 'TIME HAS EXPIRED!'" default="TIME HAS EXPIRED!" type="string" size="17"/>
+			</hack>
+			<hack name="Indicator messages">
+				<offset file="p0" value="0x1b34a"/>
+				<offset file="p3" value="0x1c181"/>
+				<offset file="p4" value="0x184c3"/>
+				<offset file="u0" value="0x1cefe"/>
+				<offset file="u3" value="0x1ce0a"/>
+				<offset file="u4" value="0x19724"/>
+				<read name="Text 'LEVEL %d'" default="LEVEL %d" type="string" size="8"/>
+				<offset file="p0" value="0x1b354"/>
+				<offset file="p3" value="0x1c18b"/>
+				<offset file="p4" value="0x184cd"/>
+				<offset file="u0" value="0x1cf08"/>
+				<offset file="u3" value="0x1ce14"/>
+				<offset file="u4" value="0x1972e"/>
+				<read name="Text 'Press Button to Continue'" default="Press Button to Continue" type="string" size="24"/>
+				<offset file="p0" value="0x1b3ce"/>
+				<offset file="p3" value="0x1c205"/>
+				<offset file="p4" value="0x18547"/>
+				<offset file="u0" value="0x1cf82"/>
+				<offset file="u3" value="0x1ce8e"/>
+				<offset file="u4" value="0x197a8"/>
+				<read name="Text 'SOUND ON'" default="SOUND ON" type="string" size="8"/>
+				<offset file="p0" value="0x1b3d8"/>
+				<offset file="p3" value="0x1c20f"/>
+				<offset file="p4" value="0x18551"/>
+				<offset file="u0" value="0x1cf8c"/>
+				<offset file="u3" value="0x1ce98"/>
+				<offset file="u4" value="0x197b2"/>
+				<read name="Text 'SOUND OFF'" default="SOUND OFF" type="string" size="9"/>
+				<offset file="p0" value="0x1b3e2"/>
+				<offset file="u0" value="0x1cf96"/>
+				<read name="Version text in 1.0" default="PRINCE OF PERSIA  V1.0" type="string" size="22"/>
+				<offset file="p0" value="0x1b3fa"/>
+				<offset file="p3" value="0x1c219"/>
+				<offset file="p4" value="0x1855b"/>
+				<offset file="u0" value="0x1cfae"/>
+				<offset file="u3" value="0x1cea2"/>
+				<offset file="u4" value="0x197bc"/>
+				<read name="Text 'JOYSTICK UNAVAILABLE'" default="JOYSTICK UNAVAILABLE" type="string" size="20"/>
+				<offset file="p0" value="0x1b410"/>
+				<offset file="p3" value="0x1c22f"/>
+				<offset file="p4" value="0x18571"/>
+				<offset file="u0" value="0x1cfc4"/>
+				<offset file="u3" value="0x1ceb8"/>
+				<offset file="u4" value="0x197d2"/>
+				<read name="Text 'JOYSTICK MODE'" default="JOYSTICK MODE" type="string" size="13"/>
+				<offset file="p0" value="0x1b41e"/>
+				<offset file="p3" value="0x1c23d"/>
+				<offset file="p4" value="0x1857f"/>
+				<offset file="u0" value="0x1cfd2"/>
+				<offset file="u3" value="0x1cec6"/>
+				<offset file="u4" value="0x197e0"/>
+				<read name="Text 'JOYSTICK NOT FOUND'" default="JOYSTICK NOT FOUND" type="string" size="18"/>
+				<offset file="p0" value="0x1b432"/>
+				<offset file="p3" value="0x1c251"/>
+				<offset file="p4" value="0x18593"/>
+				<offset file="u0" value="0x1cfe6"/>
+				<offset file="u3" value="0x1ceda"/>
+				<offset file="u4" value="0x197f4"/>
+				<read name="Text 'KEYBOARD MODE'" default="KEYBOARD MODE" type="string" size="13"/>
+				<offset file="p0" value="0x1b440"/>
+				<offset file="p3" value="0x1c25f"/>
+				<offset file="p4" value="0x185a1"/>
+				<offset file="u0" value="0x1cff4"/>
+				<offset file="u3" value="0x1cee8"/>
+				<offset file="u4" value="0x19802"/>
+				<read name="Text 'GAME PAUSED'" default="GAME PAUSED" type="string" size="11"/>
+				<offset file="p0" value="0x1b46a"/>
+				<offset file="p3" value="0x1c289"/>
+				<offset file="p4" value="0x185cb"/>
+				<offset file="u0" value="0x1d01e"/>
+				<offset file="u3" value="0x1cf12"/>
+				<offset file="u4" value="0x1982c"/>
+				<read name="Text 'GAME SAVED'" default="GAME SAVED" type="string" size="10"/>
+				<offset file="p0" value="0x1b512"/>
+				<offset file="u0" value="0x1d0c6"/>
+				<read name="Loading text in 1.0" default="Loading. . . ." type="string" size="14"/>
+				<offset file="p0" value="0x1b476"/>
+				<offset file="p3" value="0x1c295"/>
+				<offset file="p4" value="0x185d7"/>
+				<offset file="u0" value="0x1d02a"/>
+				<offset file="u3" value="0x1cf1e"/>
+				<offset file="u4" value="0x19838"/>
+				<read name="Text 'UNABLE TO SAVE GAME'" default="UNABLE TO SAVE GAME" type="string" size="19"/>
+			</hack>
+		</folder>
+		<folder name="Level options">
+			<hack name="level color variations" help="If an item is off, then the default palette will be used. (from vpalace.dat or vdungeon.dat). Otherwise, if the value is N, the Nth palette is loaded from prince.dat, resource number 20 (that is a multiple palette resource) for any tiles in dungeon (instead of vdungeon.dat resource 200/360) and non-wall tiles in palace (instead of vpalace resource 200), and the (N+1)-th palette is loaded for palace wall tiles (instead of vpalace.dat resource 360).">
+				<offset file="p3" value="0x1bb06"/>
+				<offset file="u3" value="0x1c722"/>
+				<offset file="p4" value="0x17e8a"/>
+				<offset file="u4" value="0x1907e"/>
+				<read name="demo level" readoperation="if(0,off,~);" writeoperation="if(off,0,~);" type="short" default="0"/>
+				<read type="short" name="level 1" default="0" minval="0" maxval="6" readoperation="if(0,off,~);" writeoperation="if(off,0,~);"/>
+				<read type="short" name="level 2" default="0" minval="0" maxval="6" readoperation="if(0,off,~);" writeoperation="if(off,0,~);"/>
+				<read type="short" name="level 3" default="1" minval="0" maxval="6" readoperation="if(0,off,~);" writeoperation="if(off,0,~);"/>
+				<read type="short" name="level 4" default="0" minval="0" maxval="6" readoperation="if(0,off,~);" writeoperation="if(off,0,~);"/>
+				<read type="short" name="level 5" default="0" minval="0" maxval="6" readoperation="if(0,off,~);" writeoperation="if(off,0,~);"/>
+				<read type="short" name="level 6" default="0" minval="0" maxval="6" readoperation="if(0,off,~);" writeoperation="if(off,0,~);"/>
+				<read type="short" name="level 7" default="1" minval="0" maxval="6" readoperation="if(0,off,~);" writeoperation="if(off,0,~);"/>
+				<read type="short" name="level 8" default="2" minval="0" maxval="6" readoperation="if(0,off,~);" writeoperation="if(off,0,~);"/>
+				<read type="short" name="level 9" default="2" minval="0" maxval="6" readoperation="if(0,off,~);" writeoperation="if(off,0,~);"/>
+				<read type="short" name="level 10" default="0" minval="0" maxval="6" readoperation="if(0,off,~);" writeoperation="if(off,0,~);"/>
+				<read type="short" name="level 11" default="0" minval="0" maxval="6" readoperation="if(0,off,~);" writeoperation="if(off,0,~);"/>
+				<read type="short" name="level 12a" default="3" minval="0" maxval="6" readoperation="if(0,off,~);" writeoperation="if(off,0,~);"/>
+				<read type="short" name="level 12b" default="3" minval="0" maxval="6" readoperation="if(0,off,~);" writeoperation="if(off,0,~);"/>
+				<read type="short" name="princess level" default="4" minval="0" maxval="6" readoperation="if(0,off,~);" writeoperation="if(off,0,~);"/>
+				<read type="short" name="potion level" default="0" minval="0" maxval="6" readoperation="if(0,off,~);" writeoperation="if(off,0,~);"/>
+			</hack>
+			<hack name="Quitting when time expires">
+				<offset file="u0" value="0x2261"/>
+				<read duplicated="Quit when time expires" writeoperation="if(off,148,122);" type="unsigned char"/>
+				<check codes="0c"/>
+				<read duplicated="Quit when time expires" writeoperation="if(off,79,223);" type="unsigned char"/>
+				<read name="Quit when time expires" readoperation="if(2,off,on);" writeoperation="if(off,2,26);" type="unsigned char">
+					<option value="off" default="true">Disabled</option>
+					<option value="on">Enabled</option>
+				</read>
+			</hack>
+			<hack name="allowed resources per level" help="Each field sets up what resource is allowed in the specified level. If a resource that is not loaded is placed in the level, the game could crash. For example, by default chompers are not allowed in level 1, and you can't place them except you set them on here. The first level is the demo level, then you have level 1 and so on. The latest level is the potion one.">
+<!--offset file="p0" value="0x1ac3f" /-->
+				<offset file="u0" value="0x1c782"/>
+<!--offset file="p3" value="0x1b8f3" /-->
+				<offset file="u3" value="0x1c4f6"/>
+<!--offset file="p4" value="0x17c95" /-->
+				<offset file="u4" value="0x18e70"/>
+				<group name="lattice">
+					<read default="0" name="lattice-level0" type="boolean" use="checkbox"/>
+					<read default="0" name="lattice-level1" type="boolean" use="checkbox"/>
+					<read default="0" name="lattice-level2" type="boolean" use="checkbox"/>
+					<read default="0" name="lattice-level3" type="boolean" use="checkbox"/>
+					<read default="1" name="lattice-level4" type="boolean" use="checkbox"/>
+					<read default="1" name="lattice-level5" type="boolean" use="checkbox"/>
+					<read default="1" name="lattice-level6" type="boolean" use="checkbox"/>
+					<read default="0" name="lattice-level7" type="boolean" use="checkbox"/>
+					<read default="0" name="lattice-level8" type="boolean" use="checkbox"/>
+					<read default="0" name="lattice-level9" type="boolean" use="checkbox"/>
+					<read default="1" name="lattice-level10" type="boolean" use="checkbox"/>
+					<read default="0" name="lattice-level11" type="boolean" use="checkbox"/>
+					<read default="0" name="lattice-level12" type="boolean" use="checkbox"/>
+					<read default="0" name="lattice-level13" type="boolean" use="checkbox"/>
+					<read default="1" name="lattice-level14" type="boolean" use="checkbox"/>
+					<read default="0" name="lattice-level15" type="boolean" use="checkbox"/>
+				</group>
+				<group name="skeleton">
+					<read default="0" name="skeleton-level0" type="boolean" use="checkbox"/>
+					<read default="1" name="skeleton-level1" type="boolean" use="checkbox"/>
+					<read default="0" name="skeleton-level2" type="boolean" use="checkbox"/>
+					<read default="1" name="skeleton-level3" type="boolean" use="checkbox"/>
+					<read default="0" name="skeleton-level4" type="boolean" use="checkbox"/>
+					<read default="0" name="skeleton-level5" type="boolean" use="checkbox"/>
+					<read default="0" name="skeleton-level6" type="boolean" use="checkbox"/>
+					<read default="1" name="skeleton-level7" type="boolean" use="checkbox"/>
+					<read default="1" name="skeleton-level8" type="boolean" use="checkbox"/>
+					<read default="0" name="skeleton-level9" type="boolean" use="checkbox"/>
+					<read default="0" name="skeleton-level10" type="boolean" use="checkbox"/>
+					<read default="0" name="skeleton-level11" type="boolean" use="checkbox"/>
+					<read default="1" name="skeleton-level12" type="boolean" use="checkbox"/>
+					<read default="0" name="skeleton-level13" type="boolean" use="checkbox"/>
+					<read default="0" name="skeleton-level14" type="boolean" use="checkbox"/>
+					<read default="0" name="skeleton-level15" type="boolean" use="checkbox"/>
+				</group>
+				<group name="mirror">
+					<read default="0" name="mirror-level0" type="boolean" use="checkbox"/>
+					<read default="0" name="mirror-level1" type="boolean" use="checkbox"/>
+					<read default="0" name="mirror-level2" type="boolean" use="checkbox"/>
+					<read default="0" name="mirror-level3" type="boolean" use="checkbox"/>
+					<read default="1" name="mirror-level4" type="boolean" use="checkbox"/>
+					<read default="0" name="mirror-level5" type="boolean" use="checkbox"/>
+					<read default="0" name="mirror-level6" type="boolean" use="checkbox"/>
+					<read default="0" name="mirror-level7" type="boolean" use="checkbox"/>
+					<read default="0" name="mirror-level8" type="boolean" use="checkbox"/>
+					<read default="0" name="mirror-level9" type="boolean" use="checkbox"/>
+					<read default="0" name="mirror-level10" type="boolean" use="checkbox"/>
+					<read default="0" name="mirror-level11" type="boolean" use="checkbox"/>
+					<read default="0" name="mirror-level12" type="boolean" use="checkbox"/>
+					<read default="0" name="mirror-level13" type="boolean" use="checkbox"/>
+					<read default="0" name="mirror-level14" type="boolean" use="checkbox"/>
+					<read default="0" name="mirror-level15" type="boolean" use="checkbox"/>
+				</group>
+				<group name="tapestry patterns">
+					<read default="0" name="tapestry patterns-level0" type="boolean" use="checkbox"/>
+					<read default="0" name="tapestry patterns-level1" type="boolean" use="checkbox"/>
+					<read default="0" name="tapestry patterns-level2" type="boolean" use="checkbox"/>
+					<read default="0" name="tapestry patterns-level3" type="boolean" use="checkbox"/>
+					<read default="1" name="tapestry patterns-level4" type="boolean" use="checkbox"/>
+					<read default="1" name="tapestry patterns-level5" type="boolean" use="checkbox"/>
+					<read default="1" name="tapestry patterns-level6" type="boolean" use="checkbox"/>
+					<read default="0" name="tapestry patterns-level7" type="boolean" use="checkbox"/>
+					<read default="0" name="tapestry patterns-level8" type="boolean" use="checkbox"/>
+					<read default="0" name="tapestry patterns-level9" type="boolean" use="checkbox"/>
+					<read default="1" name="tapestry patterns-level10" type="boolean" use="checkbox"/>
+					<read default="1" name="tapestry patterns-level11" type="boolean" use="checkbox"/>
+					<read default="0" name="tapestry patterns-level12" type="boolean" use="checkbox"/>
+					<read default="0" name="tapestry patterns-level13" type="boolean" use="checkbox"/>
+					<read default="1" name="tapestry patterns-level14" type="boolean" use="checkbox"/>
+					<read default="0" name="tapestry patterns-level15" type="boolean" use="checkbox"/>
+				</group>
+				<group name="big pillar">
+					<read default="1" name="big pillar-level0" type="boolean" use="checkbox"/>
+					<read default="0" name="big pillar-level1" type="boolean" use="checkbox"/>
+					<read default="1" name="big pillar-level2" type="boolean" use="checkbox"/>
+					<read default="0" name="big pillar-level3" type="boolean" use="checkbox"/>
+					<read default="0" name="big pillar-level4" type="boolean" use="checkbox"/>
+					<read default="1" name="big pillar-level5" type="boolean" use="checkbox"/>
+					<read default="0" name="big pillar-level6" type="boolean" use="checkbox"/>
+					<read default="0" name="big pillar-level7" type="boolean" use="checkbox"/>
+					<read default="0" name="big pillar-level8" type="boolean" use="checkbox"/>
+					<read default="1" name="big pillar-level9" type="boolean" use="checkbox"/>
+					<read default="1" name="big pillar-level10" type="boolean" use="checkbox"/>
+					<read default="0" name="big pillar-level11" type="boolean" use="checkbox"/>
+					<read default="1" name="big pillar-level12" type="boolean" use="checkbox"/>
+					<read default="1" name="big pillar-level13" type="boolean" use="checkbox"/>
+					<read default="0" name="big pillar-level14" type="boolean" use="checkbox"/>
+					<read default="0" name="big pillar-level15" type="boolean" use="checkbox"/>
+				</group>
+				<group name="chomper">
+					<read default="1" name="chomper-level0" type="boolean" use="checkbox"/>
+					<read default="0" name="chomper-level1" type="boolean" use="checkbox"/>
+					<read default="0" name="chomper-level2" type="boolean" use="checkbox"/>
+					<read default="1" name="chomper-level3" type="boolean" use="checkbox"/>
+					<read default="1" name="chomper-level4" type="boolean" use="checkbox"/>
+					<read default="1" name="chomper-level5" type="boolean" use="checkbox"/>
+					<read default="1" name="chomper-level6" type="boolean" use="checkbox"/>
+					<read default="1" name="chomper-level7" type="boolean" use="checkbox"/>
+					<read default="1" name="chomper-level8" type="boolean" use="checkbox"/>
+					<read default="1" name="chomper-level9" type="boolean" use="checkbox"/>
+					<read default="1" name="chomper-level10" type="boolean" use="checkbox"/>
+					<read default="1" name="chomper-level11" type="boolean" use="checkbox"/>
+					<read default="0" name="chomper-level12" type="boolean" use="checkbox"/>
+					<read default="0" name="chomper-level13" type="boolean" use="checkbox"/>
+					<read default="0" name="chomper-level14" type="boolean" use="checkbox"/>
+					<read default="0" name="chomper-level15" type="boolean" use="checkbox"/>
+				</group>
+				<group name="spike">
+					<read default="1" name="spike-level0" type="boolean" use="checkbox"/>
+					<read default="1" name="spike-level1" type="boolean" use="checkbox"/>
+					<read default="1" name="spike-level2" type="boolean" use="checkbox"/>
+					<read default="1" name="spike-level3" type="boolean" use="checkbox"/>
+					<read default="1" name="spike-level4" type="boolean" use="checkbox"/>
+					<read default="1" name="spike-level5" type="boolean" use="checkbox"/>
+					<read default="1" name="spike-level6" type="boolean" use="checkbox"/>
+					<read default="1" name="spike-level7" type="boolean" use="checkbox"/>
+					<read default="1" name="spike-level8" type="boolean" use="checkbox"/>
+					<read default="1" name="spike-level9" type="boolean" use="checkbox"/>
+					<read default="1" name="spike-level10" type="boolean" use="checkbox"/>
+					<read default="1" name="spike-level11" type="boolean" use="checkbox"/>
+					<read default="1" name="spike-level12" type="boolean" use="checkbox"/>
+					<read default="0" name="spike-level13" type="boolean" use="checkbox"/>
+					<read default="0" name="spike-level14" type="boolean" use="checkbox"/>
+					<read default="0" name="spike-level15" type="boolean" use="checkbox"/>
+				</group>
+				<group name="big window">
+					<read default="0" name="big window-level0" type="boolean" use="checkbox"/>
+					<read default="0" name="big window-level1" type="boolean" use="checkbox"/>
+					<read default="0" name="big window-level2" type="boolean" use="checkbox"/>
+					<read default="0" name="big window-level3" type="boolean" use="checkbox"/>
+					<read default="0" name="big window-level4" type="boolean" use="checkbox"/>
+					<read default="0" name="big window-level5" type="boolean" use="checkbox"/>
+					<read default="1" name="big window-level6" type="boolean" use="checkbox"/>
+					<read default="0" name="big window-level7" type="boolean" use="checkbox"/>
+					<read default="0" name="big window-level8" type="boolean" use="checkbox"/>
+					<read default="0" name="big window-level9" type="boolean" use="checkbox"/>
+					<read default="0" name="big window-level10" type="boolean" use="checkbox"/>
+					<read default="0" name="big window-level11" type="boolean" use="checkbox"/>
+					<read default="0" name="big window-level12" type="boolean" use="checkbox"/>
+					<read default="0" name="big window-level13" type="boolean" use="checkbox"/>
+					<read default="1" name="big window-level14" type="boolean" use="checkbox"/>
+					<read default="0" name="big window-level15" type="boolean" use="checkbox"/>
+				</group>
+			</hack>
+			<hack name="Cutscenes" help="This hack is in testing mode, don't change a value from/to none">
+				<offset file="u0" value="0x1d530"/>
+				<read type="long" name="demo level" enum="scenes" default="0" />
+				<read type="long" name="level 1" enum="scenes" default="0" />
+				<read type="long" name="level 2" enum="scenes" default="38733240" />
+				<read type="long" name="level 3" enum="scenes" default="0" />
+				<read type="long" name="level 4" enum="scenes" default="38733188"/>
+				<read type="long" name="level 5" enum="scenes" default="0" />
+				<read type="long" name="level 6" enum="scenes" default="38733240"/>
+				<read type="long" name="level 7" enum="scenes" default="0" />
+				<read type="long" name="level 8" enum="scenes" default="38732621"/>
+				<read type="long" name="level 9" enum="scenes" default="38732727"/>
+				<read type="long" name="level 10" enum="scenes" default="0" />
+				<read type="long" name="level 11" enum="scenes" default="0" />
+				<read type="long" name="level 12a" enum="scenes" default="38733093" />
+				<read type="long" name="level 12b" enum="scenes" default="0" />
+				<read type="long" name="princess level" enum="scenes" default="0" />
+				<read type="long" name="potion level" enum="scenes" default="0" />
+			</hack>
+			<folder name="level specific events">
+				<hack name="number of hit points of the Prince on demo level">
+					<offset file="p0" value="0x4c25"/>
+					<offset file="u0" value="0x62d5"/>
+					<offset file="p3" value="0x50ad"/>
+					<offset file="u3" value="0x57ed"/>
+					<offset file="p4" value="0x4b69"/>
+					<offset file="u4" value="0x5c99"/>
+					<check codes="c7 46 fe"/>
+					<read default="4" name="Hit points" type="unsigned char"/>
+					<check codes="00 8b 46 fe"/>
+				</hack>
+				<hack name="demo level ending screen">
+					<offset file="p0" value="0xb35"/>
+					<offset file="u0" value="0x21e5"/>
+					<offset file="p3" value="0xc1a"/>
+					<offset file="u3" value="0x135a"/>
+					<offset file="p4" value="0xbde"/>
+					<offset file="u4" value="0x1d0e"/>
+					<check codes="83 3e .. .."/>
+					<read default="0" name="level" type="char"/>
+					<check codes="75 26 80 3e .. .."/>
+					<read default="24" name="room" type="char"/>
+				</hack>
+				<hack name="level 3 checkpoint" help="When playing the original level 3, you must do a four-tile jump to reach the second part of the level. Once the skeleton kills you you'll be spawned on the second part of the level. But when you die, the whole level is reloaded to memory, this means that the loose tile that is in the four-tiled jump is not there anymore. The exe game erases this tile when you are spawned in the second part of the level to keep the map integrity. Other stuff like potions (specially the big one) are regenerated and you can drink them again (yes, this means that in level 3 you can have 2 big potions).">
+					<offset file="p0" value="0x4b9a"/>
+					<offset file="u0" value="0x624a"/>
+					<offset file="p3" value="0x5022"/>
+					<offset file="u3" value="0x5762"/>
+					<offset file="p4" value="0x4ade"/>
+					<offset file="u4" value="0x5c0e"/>
+					<check codes="83 3e .. .."/>
+					<read default="3" name="level" type="char"/>
+					<check codes="75 32 83 3e .. .. 00 74 2b c6 06 .. .."/>
+					<read name="direction" type="signed char" help="Where are you looking after respawning?">
+						<option default="true" value="-1">Left</option>
+						<option value="0">Right</option>
+					</read>
+					<check codes="c6 06 .. .."/>
+					<read default="2" name="respawn room" type="char" help="This is not the checkpoint trigger, only the room where you appear, the trigger is 'moving from room 7 to 2'"/>
+					<check codes="c6 06 .. .."/>
+					<read default="6" name="respawn location" type="char" minval="0" maxval="29" help="A number from 0 to 29 indicating tile and floor where you are respawned. i.e. 0 is top-left tile; 12 is middle, third from the left tile." />
+					<check codes="b8"/>
+					<read default="7" name="room of the tile to clear" type="short" help="This is the room where the tile is erased"/>
+					<check codes="50 b8"/>
+					<read default="4" name="location of the tile to clear" type="char" minval="0" maxval="29" help="The room tiles are from 0 to 29 in the same way as the location. Remember that you can erase potions, you can also set it to an empty tile to do nothing."/>
+					<check codes="00 50"/>
+					<read name="floor of the tile to clear" type="short">
+						<option value="49195" default="true">Top</option>
+						<option value="432">Middle</option>
+						<option value="688">Bottom</option>
+					</read>
+				</hack>
+				<hack name="the mirror">
+					<offset file="p0" value="0x8dc3"/>
+					<offset file="u0" value="0xa473"/>
+					<offset file="p3" value="0x9270"/>
+					<offset file="u3" value="0x99b0"/>
+					<offset file="p4" value="0x8d2c"/>
+					<offset file="u4" value="0x9e5c"/>
+					<check codes="83 3e .. .."/>
+					<read default="4" name="level" type="char"/>
+					<check codes="75 2a b8"/>
+					<read default="4" name="tile location and room" type="char" help="it's both, so to change the location you must swap the room contents with the corresponding new room. When tiles greater than 10 are used, the next room will be used"/>
+					<check codes="00 50 50"/>
+					<read name="floor" type="short">
+						<option value="49195" default="true">Top</option>
+						<option value="432">Middle</option>
+						<option value="688">Bottom</option>
+					</read>
+					<check codes="50 .. .. .. .. .. 8a 1e .. .. 2a ff 8b 36 .. .. c6 00"/>
+					<read default="13" name="Mirror tile code" type="char"/>
+				</hack>
+				<hack name="the mouse" help="Changing the level or room will loose the animation, so here the most important value is the time">
+					<offset file="p0" value="0x5162"/>
+					<offset file="u0" value="0x6812"/>
+					<offset file="p3" value="0x55f6"/>
+					<offset file="u3" value="0x5d36"/>
+					<offset file="p4" value="0x50b2"/>
+					<offset file="u4" value="0x61e2"/>
+					<check codes="83 3e .. .."/>
+					<read default="8" name="level" type="char"/>
+					<check codes="75 .. 80 3e .. .."/>
+					<read default="16" name="room" type="char"/>
+					<check codes="75 .. 83 3e .. .. 00 74 .. ff 06 .. .. 81 3e .. .."/>
+					<read type="unsigned short int" name="time to wait" default="150" minval="0" maxval="65535" readoperation="tofloat;multiply(100);divide(12);round;divide(100);" writeoperation="multiply(12);floor;tointeger;" help="This is the time in seconds that the mouse will wait until appear since you entered the room. The number must be from 0 to 5461.25 seconds."/>
+					<check codes="75 .. 0e"/>
+					<offset file="p0" value="0x54af"/>
+					<offset file="u0" value="0x6b5f"/>
+					<offset file="p3" value="0x5943"/>
+					<offset file="u3" value="0x6083"/>
+					<offset file="p4" value="0x53ff"/>
+					<offset file="u4" value="0x652f"/>
+					<check codes="c6 06 .. .."/>
+					<read default="24" name="object" type="char" help="Be careful: a value not 24 will change the mouse for the kid"/>
+					<check codes="c6 06 .. .."/>
+					<read default="200" name="start position of the mouse" type="char" help="remember to edit the level and leave some space to move on, if it falls, the animation may become corrupted."/>
+					<check codes="2a c0 a2 .. .. 98"/>
+				</hack>
+				<hack name="level 12 ending">
+					<offset file="p0" value="0xb80"/>
+					<offset file="u0" value="0x2230"/>
+					<offset file="p3" value="0xc69"/>
+					<offset file="u3" value="0x13a9"/>
+					<offset file="p4" value="0xc2d"/>
+					<offset file="u4" value="0x1d5d"/>
+					<check codes="83 3e .. .."/>
+					<read default="12" name="level that activates the pass trigger" type="char"/>
+					<check codes="75 .. 80 3e .. .."/>
+					<read default="23" name="room that activates the trigger" type="char"/>
+				</hack>
+				<hack name="Loose tiles in level 12">
+					<offset file="p0" value="0x1209"/>
+					<offset file="u0" value="0x28b9"/>
+					<offset file="p4" value="0x1354"/>
+					<offset file="u4" value="0x2484"/>
+					<check codes="83 3e .. .."/>
+					<read default="13" name="level" type="char"/>
+					<check codes="75 .. 83 3e .. .."/>
+					<read default="23" name="room 1" type="char"/>
+					<check codes="74 .. 83 3e .. .."/>
+					<read default="16" name="room 2" type="char"/>
+					<check codes="75 .. a1 .. .. a3 .. .. 50 9a .. .. .. .. c6 06 .. .."/>
+					<read default="22" name="starting tile to be pressed" type="char"/>
+					<check codes="b8 .. .. 50 9a .. .. .. .. 2a e4 25 0f 00 f7 d8 50 9a .. .. .. .. fe 06 .. .. 80 3e .. .."/>
+					<read default="27" name="ending tile" type="char"/>
+				</hack>
+				<hack name="Jaffar/guard death: blinking and event trigger" help="After killing the guard in the specified level the screen will blink and when changing the room the event 0 will trigger.">
+					<offset file="p0" value="0x84af"/>
+					<offset file="u0" value="0x9b5f"/>
+					<offset file="p3" value="0x895f"/>
+					<offset file="u3" value="0x909f"/>
+					<offset file="p4" value="0x841b"/>
+					<offset file="u4" value="0x954b"/>
+					<check codes="83 3e .. .."/>
+					<read default="13" name="level" type="char"/>
+					<check codes="75 1d c7 06 .. .. 0f 00 c7 06 .. .."/>
+					<read default="18" name="blinking time when you kill him" type="short" minval="0" maxval="65536"/>
+					<check codes="c7 06 .. .. 01 00 c7 06"/>
+				</hack>
+				<hack name="the winning screen">
+					<offset file="p0" value="0x11d8"/>
+					<offset file="u0" value="0x2888"/>
+					<offset file="p3" value="0x1393"/>
+					<offset file="u3" value="0x1ad3"/>
+					<offset file="p4" value="0x1323"/>
+					<offset file="u4" value="0x2453"/>
+					<check codes="83 3e .. .."/>
+					<read default="14" name="level where you can win" type="char"/>
+					<check codes="75 0c 83 3e .. .."/>
+					<read default="5" name="winning room" type="char"/>
+				</hack>
+			</folder>
+		</folder>
+		<folder name="Keyboard">
+			<hack name="Special key codes" help="Some codes are the same, for example Enter key is control+m, tab is control+i, backspace is control+h, escape is control+[... those codes should be avoided. The original game doesn't avoid the escape key and you can use control+[ to pause it. There isn't a distinction with the left and right modifier keys or with the keypad, so so example both shifts works the same and both plus signs have the same effect.">
+				<offset file="p0" value="0x8bd"/>
+				<offset file="u0" value="0x1f6d"/>
+				<offset file="p3" value="0x9a5"/>
+				<offset file="u3" value="0x10e5"/>
+				<offset file="p4" value="0x969"/>
+				<offset file="u4" value="0x1a99"/>
+				<check codes="3d"/>
+				<read name="Sound key" type="char" default="19" enum="keyboard" />
+				<check codes="00 75 .. .. .. .. 3d"/>
+				<read name="Version key" type="char" enum="keyboard" default="22"/>
+				<check codes="00 74 .. 3d"/>
+				<read name="Pause key" type="char" enum="keyboard" default="27"/>
+				<check codes="00 75 .. .. .. .. 3d"/>
+				<read name="Show time key" type="char" enum="keyboard" default="32"/>
+				<check codes="00 75 .. .. .. .. 3d"/>
+				<read name="Pass level key" type="char" enum="keyboard" default="76"/>
+				<check codes="00"/>
+				<offset file="p0" value="0x8e5"/>
+				<offset file="u0" value="0x1f95"/>
+				<offset file="p3" value="0x9ca"/>
+				<offset file="u3" value="0x110a"/>
+				<offset file="p4" value="0x98e"/>
+				<offset file="u4" value="0x1abe"/>
+				<check codes="8b 46 fa 3d"/>
+				<read name="Life key" type="char" enum="keyboard" default="84"/>
+				<check codes="00 75 03 e9 94 01 76 03 e9 aa 01 3d"/>
+				<read name="More time key" type="char" enum="keyboard" default="43"/>
+				<check codes="00 75 03 e9 b0 00 3d"/>
+				<read name="Less time key" type="char" enum="keyboard" default="45"/>
+				<check codes="00 75 03 e9 8d 00 3d"/>
+				<read name="Blind mode key" type="char" enum="keyboard" default="66"/>
+				<check codes="00 75 03 e9 25 01 3d"/>
+				<read name="Show corner screens key" type="char" enum="keyboard" default="67"/>
+				<check codes="00 74 5e 3d"/>
+				<read name="Screen invert key" type="char" enum="keyboard" default="73"/>
+				<check codes="00 75 03 e9 c6 00 3d"/>
+				<read name="Health key" type="char" enum="keyboard" default="83"/>
+				<check codes="00 75 03"/>
+				<offset file="p0" value="0xa9c"/>
+				<offset file="u0" value="0x214c"/>
+				<offset file="p3" value="0xb81"/>
+				<offset file="u3" value="0x12c1"/>
+				<offset file="p4" value="0xb45"/>
+				<offset file="u4" value="0x1c75"/>
+				<check codes="e9 b4 fe 3d"/>
+				<read name="Look right key" type="char" enum="keyboard" default="106"/>
+				<check codes="00 75 03 e9 5b ff 77 1b 3d"/>
+				<read name="Feather weight" type="char" enum="keyboard" default="87"/>
+				<check codes="00 75 03 e9 36 ff 3d"/>
+				<read name="Show adjacent screen ids key" type="char" enum="keyboard" default="99"/>
+				<check codes="00 75 03 e9 6b fe 3d"/>
+				<read name="Look left key" type="char" enum="keyboard" default="104"/>
+				<check codes="00 75 03 e9 2d ff e9 8f fe 3d"/>
+				<read name="Kill guard key" type="char" enum="keyboard" default="107"/>
+				<check codes="00 75 03 e9 04 ff 3d"/>
+				<read name="Look bottom key" type="char" enum="keyboard" default="110"/>
+				<check codes="00 75 03 e9 4e ff 3d"/>
+				<read name="Revive key" type="char" enum="keyboard" default="114"/>
+				<check codes="00 75 03 e9 d7 fe 3d"/>
+				<read name="Look up key" type="char" enum="keyboard" default="117"/>
+				<check codes="00 75 03 e9 2e ff e9 6c fe 8b e5"/>
+				<offset file="p0" value="0x772"/>
+				<offset file="u0" value="0x1e22"/>
+				<offset file="p3" value="0x846"/>
+				<offset file="u3" value="0xf86"/>
+				<offset file="p4" value="0x80a"/>
+				<offset file="u4" value="0x193a"/>
+				<check codes="3d"/>
+				<read name="Titles key" type="char" enum="keyboard" default="18"/>
+				<check codes="00 .. .. .. .. .. .. .. e9 .. .. 3d"/>
+				<read name="Restart level key" type="char" enum="keyboard" default="1"/>
+				<check codes="00 .. .. 3d"/>
+				<read name="Save game key" type="char" enum="keyboard" default="7"/>
+				<check codes="00 .. .. 3d"/>
+				<read name="Joystick mode" type="char" enum="keyboard" default="10"/>
+				<check codes="00 .. .. 3d"/>
+				<read name="Keyboard mode" type="char" enum="keyboard" default="11"/>
+				<check codes="00"/>
+				<offset file="p0" value="0xd7ce"/>
+				<offset file="u0" value="0xee7e"/>
+				<offset file="p3" value="0xdcbc"/>
+				<offset file="u3" value="0xe3fc"/>
+				<offset file="p4" value="0xd616"/>
+				<offset file="u4" value="0xe746"/>
+				<check codes="89 46 fe 3d"/>
+				<read name="Quit key" type="char" enum="keyboard" default="17"/>
+				<check codes="00"/>
+			</hack>
+<!--
+Note that key codes are in ASCII, including the control key:
+ 01-1a control + key. i.e. 13 (decimal 19) is control+s.
+ 1b-40 special keys and numbers. i.e. 2b (decimal 43) is the plus sign "+" or 1b (decimal 27) is the escape key.
+ 41-5a shift + key. i.e. 4c (decimal 76) is upper case "L".
+ 5b-60 more special codes
+ 61-7a key. i.e. 6b (decimal 153) is the lower case "k".
+ 7b-ff more special codes
+-->
+		</folder>
+
+		<folder name="Beta options">
+
+
+<hack name="Potion level ignored when using command line prince megahit (n)">
+	<offset file="p0" value="0x4a58"/>
+	<offset file="u0" value="0x6108"/>
+
+	<check codes="75 0c 83 3e 9a 00 00"/>
+				<read name="Ignore potion level" type="char">
+					<option value="117" default="true">Don't skip</option>
+					<option value="235">Skip</option>
+				</read>
+</hack>
+
+
+			<hack name="Making the demo level playable">
+				<offset file="p0" value="0x7ba5"/>
+				<offset file="u0" value="0x9255"/>
+				<offset file="p3" value="0x8049"/>
+				<offset file="u3" value="0x8789"/>
+				<offset file="p4" value="0x7b05"/>
+				<offset file="u4" value="0x8c35"/>
+
+				<check codes="83 3e .. .. .."/>
+				<read name="Demo level status" type="char">
+					<option value="117" default="true">Not playable</option>
+					<option value="235">Playable</option>
+				</read>
+				<check codes="34 0e e8"/>
+			</hack>
+			<hack name="Changing the first and last level accessible by cheat parameter">
+				<offset file="p0" value="0x3aa"/>
+				<offset file="u0" value="0x1a5a"/>
+				<offset file="p3" value="0x433"/>
+				<offset file="u3" value="0xb73"/>
+				<offset file="p4" value="0x41d"/>
+				<offset file="u4" value="0x154d"/>
+
+				<check codes="83 3e .. .. .. 74 36 c7 46 f8"/>
+				<read default="14" name="last accessible level" type="char"/>
+				<check codes=".. eb 03 ff 4e f8 83 7e f8"/>
+				<read default="0" name="first accessible level" type="char"/><!-- this is not the default in all versions :S -->
+				<check codes="7c 26 ff 76 f8 b8"/>
+			</hack>
+			<hack name="Changing additional hit-points of guards with different skills">
+				<offset file="u0" value="0x1d452"/>
+				<offset file="u3" value="0x1d344"/>
+				<offset file="u4" value="0x19cee"/>
+
+				<read default="0" name="Additional HP for skill 1" type="short"/>
+				<read default="0" name="Additional HP for skill 2" type="short"/>
+				<read default="0" name="Additional HP for skill 3" type="short"/>
+				<read default="0" name="Additional HP for skill 4" type="short"/>
+				<read default="1" name="Additional HP for skill 5" type="short"/>
+				<read default="0" name="Additional HP for skill 6" type="short"/>
+				<read default="0" name="Additional HP for skill 7" type="short"/>
+				<read default="0" name="Additional HP for skill 8" type="short"/>
+				<read default="0" name="Additional HP for skill 9" type="short"/>
+				<read default="0" name="Additional HP for skill 10" type="short"/>
+				<read default="0" name="Additional HP for skill 11" type="short"/>
+				<read default="0" name="Additional HP for skill 12" type="short"/>
+			</hack>
+			<hack name="Cheat code activation word">
+				<offset file="p0" value="0x1aaca"/>
+				<offset file="u0" value="0x1c60d"/>
+				<read name="Older version cheat code" default="megahit" type="string" size="7"/>
+
+				<offset file="p0" value="none"/>
+				<offset file="u0" value="none"/>
+				<offset file="p3" value="0x1b85f"/>
+				<offset file="u3" value="0x1c462"/>
+				<offset file="p4" value="0x17c05"/>
+				<offset file="u4" value="0x18de0"/>
+				<read name="Newer versions cheat code" default="improved" type="string" size="8"/>
+			</hack>
+		</folder>
+
+
+	</hacks>
+</princehack>
