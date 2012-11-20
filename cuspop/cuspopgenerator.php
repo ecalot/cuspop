@@ -264,7 +264,7 @@ function print_page() {
 	/* draw versions */
 	echo "<h2>Choose your file</h2><div class='hc4'><p><label>Choose the file you want:</label> ";
 	$i=0;
-	echo "<select name='file' onchange='x();' class='nonblocked'>";
+	echo "<select name='file' class='nonblocked'>";
 
 	while ($file=@$filelist[$i++]) {
 		$file=$file['attributes'];
@@ -305,7 +305,7 @@ function print_page() {
 }
 ob_start();
 print_page();
-print_script();
+//print_script();
 $html = ob_get_clean();
 ob_start();
 print_to_send();

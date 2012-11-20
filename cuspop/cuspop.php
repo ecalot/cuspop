@@ -23,9 +23,9 @@ background:#eee;
 input.inputblocktext {
  width:3em
 }
-	</style><script src='/wp-content/plugins/cuspop/jquery.min.js' type='text/javascript'></script>";
+	</style><script src='/wp-content/plugins/cuspop/jquery.min.js' type='text/javascript'></script><script src='/wp-content/plugins/cuspop/cuspop.js' type='text/javascript'></script>";
 }
-add_action('wp_head', 'cuspop_css', 9);
+//add_action('wp_head', 'cuspop_css', 9);
 
 require(dirname(__FILE__) . '/cusasm.php');
 

@@ -1,3 +1,2 @@
 RewriteEngine on
 RewriteRule ^prince.exe$ gethack.php [NS,L]
-RewriteRule ^cusasm.jsp$ cusasm.php [NS,L]

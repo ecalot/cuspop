@@ -1,7 +1,7 @@
 <?
 
 function generate_marks(&$marks,&$marknames,$offset,$codes,$asm) {
-	$markname=preg_match('/<-- (.*)$/',$asm,$r)?$r[1]:false;
+	$markname=preg_match('/<-- (.*[^ \t])[ \t]*$/',$asm,$r)?trim($r[1]):false;
 	if (ereg(",([0-9A-Fa-f][0-9A-Fa-f])([0-9A-Fa-f][0-9A-Fa-f])",$asm,$r)) {
 		$h1=$r[1];
 		$h2=$r[2];
